@@ -1,0 +1,63 @@
+html,body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.content-center {
+	margin-right: auto!important;
+	margin-left: auto!important;
+}
+
+#banner {
+    background-image: url("https://cdn.jsdelivr.net/gh/mcxiaolan/jsdelivr@master/bj.png");
+    background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: center center;
+    height: 100vh;
+    width: 100%;
+    /* filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
+    -moz-filter: brightness(0.8);
+    -o-filter:  brightness(0.8);
+    -ms-filter:  brightness(0.8); */
+}
+.banner-title {
+    font-weight: 400;
+    filter: brightness(1.3);
+    -webkit-filter: brightness(1.3);
+    -moz-filter: brightness(1);
+    -o-filter:  brightness(1);
+    -ms-filter:  brightness(1);
+}
+.card {
+    max-width: 650px;
+    margin: 20px auto;
+}
+#support *{
+    max-width: 100%!important;
+	word-break: break-all;
+}
+#posts {
+    padding-top: 0;
+}
+#left-drawer li{
+    opacity: .85;
+}
+#tp-weather-widget {
+    text-align: center;
+}
+#weather-spinner {
+    margin-top: 10px;
+}
+
+footer {
+    padding: 10px 20px;
+    opacity: .65;
+}
+
+.a-p {
+    color: black;
+    text-decoration: none;
+}

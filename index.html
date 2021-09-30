@@ -1,0 +1,110 @@
+<!doctype html>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>岚天呀的个人主页</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body class="">
+
+<div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-text-color-white">
+<div class="mdui-toolbar mdui-color-theme">
+<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer',overlay: true}"><i class="mdui-icon material-icons">menu</i></a>
+<a href="/" class="mdui-typo-title">岚天呀</a>
+<div class="mdui-toolbar-spacer"></div>
+</div>
+</div>
+<nav id="banner" class="mdui-container-fluid mdui-valign">
+<h2 style="color:white!important;" class="banner-title mdui-center mdui-text-color-theme">
+不断折腾，不断进步！
+</h2>
+</nav>
+
+<div class="mdui-card card">
+<div class="mdui-card-primary">
+<div class="mdui-card-primary-title">岚天呀</div>
+</div>
+
+<div class="mdui-card-content mdui-typo">嗨，我是 岚天呀，很高兴能在茫茫人海中遇见你。<br>我是一名来自中国的学生，喜欢编程和游戏，请多多指教！
+<br>欢迎在 Telegram 上关注 <a href="https://t.me/LTY_talk" rel="nofollow">我的频道</a> 或 <a href="https://t.me/mcxiaolan" rel="nofollow">与我交流</a>。
+<br>你也可以通过邮箱找到我：<code>3152293832#qq.com</code> (# =&gt; @)
+<br>如果你想赞助我，可以 <a href="javascript:qqpay();">QQ赞助</a>，<a href="javascript:wechatpay();">微信赞助</a>。
+</div>
+</div>
+
+<div class="mdui-card card">
+<div class="mdui-card-primary">
+<div class="mdui-card-primary-title">近期文章</div>
+<div class="mdui-card-primary-subtitle">最近在 小岚的小窝 上发布的 5 篇文章</div>
+</div>
+
+<div class="mdui-card-content" id="posts">
+<div id="posts-label" class="mdui-list"></div>
+<div id="post-spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>
+</div>
+</div>
+
+
+<div class="mdui-drawer mdui-color-white mdui-drawer-close" id="left-drawer">
+<ul class="mdui-list">
+<li class="mdui-subheader">我的网站</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://blog.mcxiaolan.top'"> <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
+<div class="mdui-list-item-content">小岚的小窝</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://forum.mcxiaolan.top/'"> <i class="mdui-list-item-icon mdui-icon material-icons">forum</i>
+<div class="mdui-list-item-content">岚天论坛</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://xiaolan.eu.org'"> <i class="mdui-list-item-icon mdui-icon material-icons">shopping_cart</i>
+<div class="mdui-list-item-content">岚天商店</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://tools.lantianya.ga'"> <i class="mdui-list-item-icon mdui-icon material-icons">business_center</i>
+<div class="mdui-list-item-content">工具箱</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://officedrive.herokuapp.com'"> <i class="mdui-list-item-icon mdui-icon material-icons">cloud_download</i>
+<div class="mdui-list-item-content">网盘</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://ssl.mcxiaolan.top/'"> <i class="mdui-list-item-icon mdui-icon material-icons">center_focus_weak</i>
+<div class="mdui-list-item-content">证书透明</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://shouyouqu.pages.dev/'"> <i class="mdui-list-item-icon mdui-icon material-icons">tag_faces</i>
+<div class="mdui-list-item-content">收有趣</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://dns.mcxiaolan.top/'"> <i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+<div class="mdui-list-item-content">免费二级域名</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://www.urlshare.cn/umirror_url_check?url=http://fblog.ml'"> <i class="mdui-list-item-icon mdui-icon material-icons">cloud</i>
+<div class="mdui-list-item-content">免费网站托管</div>
+</li>
+
+<li class="mdui-subheader">找到我</li>
+<li class="mdui-list-item mdui-ripple" onclick="mdui.alert('3152293832#qq.com (# => @)')">
+<div class="mdui-list-item-content">Email</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.open('https://jq.qq.com/?_wv=1027&k=2Gmekla5');">
+<div class="mdui-list-item-content">QQ</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.open('https://space.bilibili.com/355877984');">
+<div class="mdui-list-item-content">Bilibili</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.open('https://github.com/mcxiaolan');">
+<div class="mdui-list-item-content">GitHub</div>
+</li>
+<li class="mdui-list-item mdui-ripple" onclick="window.open('https://t.me/mcxiaolan');">
+<div class="mdui-list-item-content">Telegram</div>
+</li>
+</ul>
+</div>
+
+<footer class="mdui-text-center">
+<p>岚天呀</p>
+<p>Powered by <a href="https://yfun.top" rel="nofollow">YFun</a></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" crossorigin="anonymous"></script>
+<script src="js/home.js"></script>
+
+
+
+
+</body></html>
