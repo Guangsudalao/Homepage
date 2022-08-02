@@ -10,7 +10,7 @@ html,body {
 }
 
 #banner {
-    background-image: url("https://cdn.dlya.top/img/bg1.jpg");
+    background-image: url("https://static.dlya.top/img/bg1.jpg");
     background-size:cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
