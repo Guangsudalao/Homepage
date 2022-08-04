@@ -29,7 +29,7 @@ document.onreadystatechange = function () {
         /* Posts */
         $.ajax({
             method: 'GET',
-            url: 'https://blog.dlya.top/sitemap.xml',
+            url: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.dlya.top%2Fatom.xml',
             // url: 'https://blog.yfun.top/search.json',
             success: function (data) {
                 var data = JSON.parse(data).items;
