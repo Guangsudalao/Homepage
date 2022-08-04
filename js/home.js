@@ -29,7 +29,7 @@ document.onreadystatechange = function () {
         /* Posts */
         $.ajax({
             method: 'GET',
-            url: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.dlya.top%2Ffeed%2F',
+            url: 'https://blog.dlya.top/sitemap.xml',
             // url: 'https://blog.yfun.top/search.json',
             success: function (data) {
                 var data = JSON.parse(data).items;
@@ -38,7 +38,7 @@ document.onreadystatechange = function () {
                 for (var i = 0; i <= 4; i++) {
                     var element = document.createElement('a');
                     element.href = data[i].link;
-                    // element.href = "https://blog.mcxiaolan.top" + data[i].url;
+                    // element.href = "https://blog.dlya.top" + data[i].url;
                     element.classList = "mdui-list-item mdui-ripple";
                     element.textContent = data[i].title;
                     element.target = "blank"
