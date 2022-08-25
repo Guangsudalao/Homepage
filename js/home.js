@@ -63,14 +63,14 @@ document.getElementById('support').addEventListener('open.mdui.dialog', function
 var support = new mdui.Dialog('#support');
 
 function qqpay() {
-    window.open("https://cdn.jsdelivr.net/gh/mcxiaolan/jsdelivr@master/qqpay.png");
+    window.open("");
     // support.open();
 }
 
 var support = new mdui.Dialog('#support');
 
 function wechatpay() {
-    window.open("https://cdn.jsdelivr.net/gh/mcxiaolan/jsdelivr@master/wechatpay.png");
+    window.open("");
     // support.open();
 }
 
